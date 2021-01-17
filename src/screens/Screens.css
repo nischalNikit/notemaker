@@ -1,0 +1,263 @@
+.Home{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hr{
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, 
+        rgba(0, 0, 0, 0), 
+        rgba(123, 140, 146, 0.75),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.TaskInputContainer{
+    flex: 0.3;
+    width: 100%;
+    padding-left: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.InputHeadline{
+    font-size: 2rem;
+    font-family: inherit;
+    text-transform: capitalize;
+
+    margin-bottom: 1rem;
+}
+
+.InputForm{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Input{
+    padding: 1rem;
+    width: 35%;
+    margin-right: 1rem;
+
+    text-decoration: none;
+    border: 2px solid var(--color-text);
+    border-radius: 5px;
+
+    color: var(--color-primary-light);
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Input:focus{
+    border: 2px solid var(--color-primary-light);
+    outline: none;
+}
+
+.Input::placeholder{
+    color: var(--color-text);
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.InputButton{
+    box-sizing: content-box;
+    border: 2px solid var(--color-white);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-white);
+    background-color: var(--color-green);
+    cursor: pointer;
+}
+
+.InputButton:focus{
+    outline:none;
+}
+
+.InputButton:hover{
+    border: 2px solid var(--color-primary-light);
+}
+
+.TaskListContainer{
+    flex: 0.7;
+    padding-top: 2.5rem;
+    padding-left: 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.TaskContainer{
+    width: 60%;
+    height: 40rem!important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-white);
+    border: 2px solid var(--color-primary-darker);
+    outline: none;
+    border-radius: 5px;
+}
+
+.Taskbox{
+    width: 95%;
+    background-color: var(--color-white);
+    padding: 1rem;
+    margin: 1rem 0rem;
+    border: 2px solid var(--color-primary-darker);
+    border-radius: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Control{
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.Title{
+    width: 50%;
+    flex-wrap: wrap;
+    text-decoration: none;
+    border: none;
+    color: var(--color-primary-light);
+    background-color: var(--color-white);
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.Title:focus{
+    outline: none;
+}
+
+.TaskButton{
+    width: 4rem;
+    box-sizing: content-box;
+    border: 2px solid var(--color-white);
+    border-radius: 20px;
+    padding: 1rem 2rem;
+
+    font-family: inherit;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.TaskButton:focus{
+    outline:none;
+}
+
+.TaskButton:hover{
+    border: 2px solid var(--color-primary-light);
+}
+
+/*User Management Screen*/
+
+.Management{
+    flex: 1;
+}
+
+/*Authentication Screen*/
+
+.Auth{
+    flex: 1;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.error{
+    margin: 1rem auto;
+    font-size: 1.75rem;
+    background-color: salmon;
+    padding: 1rem;
+    border-radius: 25px;
+    color: var(--color-white);
+    border: 2px solid var(--color-white);
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.AuthMain{
+    flex: 1;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.SubTitle{
+    font-size: 3.5rem;
+    color: var(--color-primary-dark);
+}
+
+.AuthButton {
+    width: 44%;
+    padding: 1rem;
+    margin: 2.5rem auto;
+    background-color:var(--color-primary-dark);
+    color:#FFFFFF;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    border: 2px solid var(--color-primary-dark);
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.AuthChangeButton{
+    margin-top: 2rem;
+    outline: none;
+    cursor: pointer;
+    color: var(--color-blue);
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: transparent;
+    border:none;
+}
+
+.AuthForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

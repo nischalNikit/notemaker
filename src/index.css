@@ -1,0 +1,41 @@
+:root{
+  --color-background-content: #F3F5F6;
+  --color-background-sidebar:  #DEDEDE; 
+
+  --color-primary-dark: #0000cc;
+  --color-primary-light:  #0000ff;
+  --color-primary-darker:  #00004d;
+
+  --color-text:  rgb(123, 140, 146);
+  --color-shadow: #B4B8BC29;
+
+  --color-yellow: rgb(255, 204, 0);
+  --color-red:#b30000;
+  --color-green: yellowgreen;
+
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}

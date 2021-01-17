@@ -1,0 +1,41 @@
+/*Changes made to input css*/
+.formElement{
+    padding: 1rem;
+    width: 70%;
+    margin-bottom: 0.5rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Input{
+    padding: 1rem;
+    width: 65%;
+    height: 5.5rem;
+
+    border: 3px solid var(--color-theme-dark);
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px var(--color-theme-dark);
+
+    font-family: inherit;
+    font-size: 1.75rem;
+    font-weight: 600;
+
+    color: var(--color-black);
+    background-color: #DAD735;
+}
+
+@media(max-width: 900px){
+    .Input{
+      width: 75%
+    }
+}
+
+
+@media(max-width: 500px){
+    .Input{
+      font-size: 2rem;
+    }
+}
+  
